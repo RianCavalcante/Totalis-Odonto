@@ -407,11 +407,11 @@ function App() {
                    <h4 className="text-xl font-bold text-gray-900 mb-2">Contatos</h4>
                    <div className="space-y-3">
                      <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors">
-                       <div className="p-2 bg-primary/10 rounded-full text-primary"><Phone size={18} /></div>
+                       <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary"><Phone size={18} /></div>
                        {CONTACT_INFO.phone}
                      </a>
                      <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors">
-                       <div className="p-2 bg-primary/10 rounded-full text-primary"><WhatsAppIcon className="w-[18px] h-[18px]" /></div>
+                       <div className="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary"><WhatsAppIcon className="w-5 h-5" /></div>
                        WhatsApp Agendamento
                      </a>
                    </div>
@@ -455,7 +455,7 @@ function App() {
         href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#128C7E] transition-all transform hover:scale-110 z-50 flex items-center gap-2 group"
+        className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#128C7E] transition-all transform hover:scale-110 z-50 flex items-center justify-center gap-2 group"
       >
         <WhatsAppIcon className="w-8 h-8" />
         <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap font-bold">

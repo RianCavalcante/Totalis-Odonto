@@ -1,7 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 /**
  * Generates an image using the 'gemini-2.5-flash-image' model (Nano Banana).
  * Falls back to a placeholder if API key is missing or generation fails.
@@ -13,6 +11,9 @@ export const generateImage = async (prompt: string): Promise<string | null> => {
   }
 
   try {
+    // Initialize inside the function to prevent app crash if key is missing on load
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash-image',
       contents: {
