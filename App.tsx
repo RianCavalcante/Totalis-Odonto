@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, MapPin, ChevronRight, Star, Quote, Phone, Instagram, ArrowRight, ShieldCheck, CheckCircle2, Sparkles, Smile, Stethoscope, Activity, Layers, Gem } from 'lucide-react';
 import { CONTACT_INFO, SERVICES, TESTIMONIALS } from './constants';
 import { Service } from './types';
